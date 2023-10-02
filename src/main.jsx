@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import {AutoHousApp} from './AutoHous-App'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter } from 'react-router-dom';
+import './styles/index.css'
+
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Layout, Row, Col, Button, Table, Modal, Form, Input } from 'antd';
 import { PlusCircleOutlined, FilterOutlined, EditOutlined, EyeOutlined } from '@ant-design/icons';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'antd/dist/antd.css';
+//import 'antd/dist/antd.css';
 
 const { Search } = Input;
 
