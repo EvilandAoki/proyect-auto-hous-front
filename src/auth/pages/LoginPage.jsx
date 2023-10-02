@@ -11,7 +11,7 @@ import { login } from '../../services/auth';
 
  export const LoginPage = () => {
 
-  const navigate = useNavigatevigate();
+  const navigate = useNavigate();
   
   const onFinish = async(values) => {
     
