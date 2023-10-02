@@ -1,13 +1,32 @@
 import React from 'react';
 import { Row, Col, Card, Form, Input, Button } from 'antd';
+
 import './../../styles/login.css';
 import { Footer } from '../../core/footer/Footer';
 import { Header } from '../../core/header/Header';
 
+import { useNavigate } from 'react-router-dom';
+import { login } from '../../services/auth';
+
+
  export const LoginPage = () => {
-  const onFinish = (values) => {
-    console.log('Valores capturados:', values);
-    // agregar la lógica para autenticar al usuario
+
+  const navigate = useNavigatevigate();
+  
+  const onFinish = async(values) => {
+    
+    try {
+
+      const response = await login(values);
+
+      localStorage.setItem('token', response.token);
+
+      navigate('/client/main');
+
+    } catch (error) {
+      console.error('Error:', error);
+    }
+
   };
 
   return (
